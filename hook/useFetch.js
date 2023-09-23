@@ -24,28 +24,31 @@ const useFetch = (endpoint, query) => {
     };
 
     const fetchData = async () => {
-        setIsLoading(true)
+        setIsLoading(true);
+
         try {
             const response = await axios.request(options);
+
             setData(response.data.data);
-            setIsLoading(false)
+            setIsLoading(false);
         } catch (error) {
-            setError(error)
-            alert(`There is an error ${error}`)
-
+            setError(error);
+            console.log(error)
         } finally {
-            setIsLoading(false)
+            setIsLoading(false);
         }
-    }
+    };
 
-    useEffect(() => { fetchData() }, [])
+    useEffect(() => {
+        fetchData();
+    }, []);
 
     //Some time's there will be issue in fetching the data so to resolve that issue we created the reFetch function to fetch the data again
 
     const refetch = () => {
-        setIsLoading(true)
-        fetchData()
-    }
+        setIsLoading(true);
+        fetchData();
+    };
 
     return { data, error, isLoading, refetch }
 
