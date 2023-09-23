@@ -40,10 +40,6 @@ const Company = ({
           <Text style={styles.locationName}>{location}</Text>
         </View>
       </View>
-      {/* <View style={styles.descriptionBox}>
-        <Text style={styles.descriptionHead}>Job Description</Text>
-        <Text style={styles.description}>{description}</Text>
-      </View> */}
     </View>
   );
 };

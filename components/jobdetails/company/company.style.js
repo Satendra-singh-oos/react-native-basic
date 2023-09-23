@@ -56,25 +56,7 @@ const styles = StyleSheet.create({
     fontFamily: FONT.regular,
     marginLeft: 2,
   },
-  // descriptionBox: {
 
-  //   marginTop: SIZES.small / 2,
-  //   flexDirection: "coloum",
-  //   justifyContent: "center",
-
-  // },
-  // descriptionHead: {
-  //   marginBottom: 3,
-  //   color: COLORS.primary,
-  //   textDecorationLine: 'underline',
-  //   fontFamily: FONT.bold,
-
-  // },
-  // description: {
-  //   fontSize: SIZES.medium - 2,
-  //   color: COLORS.secondary,
-  //   fontFamily: FONT.regular,
-  // }
 });
 
 export default styles;
